@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".RegistrationActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registration Form"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:fontFamily="serif"
+        android:textColor="@color/white"
+        android:background="@color/purple_200"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:id="@+id/et_srm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Suraname"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/et_nm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Name"
+        android:layout_marginTop="5dp"
+        />
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Email"
+        android:layout_marginTop="5dp"
+        android:inputType="textEmailAddress"
+        />
+    <EditText
+        android:id="@+id/et_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Password"
+        android:layout_marginTop="5dp"
+        android:inputType="textPassword"
+        />
+    <EditText
+        android:id="@+id/et_dob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Birthdate"
+        android:layout_marginTop="5dp"
+        android:inputType="date"
+        />
+
+    <RadioGroup
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Female" />
+    </RadioGroup>
+
+    <AutoCompleteTextView
+        android:id="@+id/actv_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Your City"
+        android:completionThreshold="1"
+      />
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="20dp"
+        />
+
+</LinearLayout>
